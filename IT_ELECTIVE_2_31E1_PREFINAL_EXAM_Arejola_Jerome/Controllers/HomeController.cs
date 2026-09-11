@@ -71,7 +71,15 @@ namespace PrefinalExamApp.Controllers
                     Topic = "Configuration Settings",
                     Explanation = "appsettings.json is the standard configuration file for connection strings and app secrets."
                 },
-
+                new ExamQuestion
+                {
+                    Id = 7,
+                    QuestionText = "A Student belongs to exactly one Section, while a Section can contain many students. What type of relationship is this?",
+                    Options = new List<string>{ "A. One-to-One", "B. One-to-Many", "C. Many-to-Many", "D. Many-to-One only" },
+                    CorrectAnswer = "B",
+                    Topic = "Relational Relationships",
+                    Explanation = "One Section maps to multiple Student records (One-to-Many)."
+                },
 
 
             };
