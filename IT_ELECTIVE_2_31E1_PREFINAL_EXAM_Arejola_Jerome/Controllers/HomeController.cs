@@ -61,7 +61,7 @@ namespace PrefinalExamApp.Controllers
                     Topic = "EF Core Scaffolding Command",
                     Explanation = "Scaffolding reads an existing database schema and generates model classes and a DbContext file."
                 },
-     
+
                 new ExamQuestion
                 {
                     Id = 6,
@@ -125,6 +125,16 @@ namespace PrefinalExamApp.Controllers
                     Topic = "LINQ Query Optimization",
                     Explanation = "It populates the Section navigation property directly inside the student query."
                 },
+                new ExamQuestion
+                {
+                    Id = 13,
+                    QuestionText = "Which type of validation occurs in the browser before a request is sent to the server?",
+                    Options = new List<string>{ "A. Database-level validation", "B. Client-side validation", "C. Server-side validation", "D. EF Core migration validation" },
+                    CorrectAnswer = "B",
+                    Topic = "Validation Types",
+                    Explanation = "Client-side validation executes JavaScript in the browser prior to HTTP transmission."
+                },
+
             };
         }
     }
