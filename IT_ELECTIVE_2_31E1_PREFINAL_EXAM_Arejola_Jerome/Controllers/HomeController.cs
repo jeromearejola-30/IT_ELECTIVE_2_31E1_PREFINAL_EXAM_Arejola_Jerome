@@ -1,32 +1,25 @@
-using IT_ELECTIVE_2_31E1_PREFINAL_EXAM_Arejola_Jerome.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
+using PrefinalExamApp.Models;
+using System.Collections.Generic;
 
-namespace IT_ELECTIVE_2_31E1_PREFINAL_EXAM_Arejola_Jerome.Controllers
+namespace PrefinalExamApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index()
         {
-            return View();
+            var questions = GetExamQuestions();
+            return View(questions);
         }
 
-        public IActionResult Privacy()
+        private List<ExamQuestion> GetExamQuestions()
         {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return new List<ExamQuestion>
+            {
+                new ExamQuestion { Id = 1, QuestionText = "What is the main problem solved by using a database instead of an in-memory collection?", Options = new List<string>{ "A. It makes C# code shorter", "B. It prevents the application from restarting", "C. It allows data to persist after the application stops", "D. It removes the need for MVC" }, CorrectAnswer = "C", Topic = "Relational Data Modeling", Explanation = "Databases provide persistent storage, retaining data after an application halts or restarts." },
+                
+                
+            };
         }
     }
 }

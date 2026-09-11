@@ -1,8 +1,42 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<PrefinalExamApp.Models.ExamQuestion>
+
+@{
+    ViewData["Title"] = "IT Elective 2 Prefinal Exam";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container my-4">
+    <div class="p-4 mb-4 bg-dark text-white rounded-3">
+        <h1 class="display-5 fw-bold">Jerome Adarayan Arejola</h1>
+        <p class="col-md-8 fs-4">BSIT - 3A | IT Elective 2 Prefinal Exam</p>
+    </div>
+
+    <div class="accordion" id="examAccordion">
+        @foreach (var q in Model)
+        {
+            <div class="accordion-item mb-2 border">
+                <h2 class="accordion-header" id="heading-@q.Id">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-@q.Id">
+                        <span class="badge bg-primary me-2">#@q.Id</span> @q.QuestionText
+                    </button>
+                </h2>
+                <div id="collapse-@q.Id" class="accordion-collapse collapse" data-bs-parent="#examAccordion">
+                    <div class="accordion-body">
+                        <span class="badge bg-secondary mb-2">@q.Topic</span>
+                        <ul class="list-group mb-3">
+                            @foreach (var opt in q.Options)
+                            {
+                                bool isCorrect = opt.StartsWith(q.CorrectAnswer);
+                                <li class="list-group-item @(isCorrect ? "list-group-item-success fw-bold" : "")">
+                                    @opt @(isCorrect ? " ✓ (Selected Answer)" : "")
+                                </li>
+                            }
+                        </ul>
+                        <div class="alert alert-info mb-0">
+                            <strong>Explanation:</strong> @q.Explanation
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>
