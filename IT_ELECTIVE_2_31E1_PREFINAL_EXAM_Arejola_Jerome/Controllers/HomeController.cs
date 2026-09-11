@@ -162,6 +162,15 @@ namespace PrefinalExamApp.Controllers
                     Topic = "Database Constraints",
                     Explanation = "Database constraints serve as the final line of defense for data consistency."
                 },
+                new ExamQuestion
+                {
+                    Id = 17,
+                    QuestionText = "What is the purpose of a try...catch block in a controller?",
+                    Options = new List<string>{ "A. To create navigation properties", "B. To catch and handle exceptions that may occur during execution", "C. To generate database tables", "D. To perform client-side validation" },
+                    CorrectAnswer = "B",
+                    Topic = "Exception Handling",
+                    Explanation = "try...catch intercepts runtime exceptions and prevents the app from crashing unexpectedly."
+                },
             };
         }
     }
