@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using PrefinalExamApp.Models;
+using IT_ELECTIVE_2_31E1_PREFINAL_EXAM_Arejola_Jerome.Models;
 using System.Collections.Generic;
 
-namespace PrefinalExamApp.Controllers
+namespace IT_ELECTIVE_2_31E1_PREFINAL_EXAM_Arejola_Jerome.Controllers
 {
     public class HomeController : Controller
     {
@@ -37,11 +37,11 @@ namespace PrefinalExamApp.Controllers
                 new ExamQuestion
                 {
                     Id = 3,
-                QuestionText = "What is the primary purpose of Entity Framework Core?",
-                Options = new List<string>{ "A. To create HTML pages automatically", "B. To replace the MVC Controller", "C. To map objects in code to relational database data", "D. To replace the C# compiler" },
-                CorrectAnswer = "C",
-                Topic = "Entity Framework Core Basics",
-                Explanation = "EF Core is an ORM (Object-Relational Mapper) that maps C# objects to relational database tables."
+                    QuestionText = "What is the primary purpose of Entity Framework Core?",
+                    Options = new List<string>{ "A. To create HTML pages automatically", "B. To replace the MVC Controller", "C. To map objects in code to relational database data", "D. To replace the C# compiler" },
+                    CorrectAnswer = "C",
+                    Topic = "Entity Framework Core Basics",
+                    Explanation = "EF Core is an ORM (Object-Relational Mapper) that maps C# objects to relational database tables."
                 },
                 new ExamQuestion
                 {
@@ -61,7 +61,6 @@ namespace PrefinalExamApp.Controllers
                     Topic = "EF Core Scaffolding Command",
                     Explanation = "Scaffolding reads an existing database schema and generates model classes and a DbContext file."
                 },
-
                 new ExamQuestion
                 {
                     Id = 6,
@@ -152,7 +151,6 @@ namespace PrefinalExamApp.Controllers
                     Topic = "Business & Domain Rules",
                     Explanation = "Uniqueness ensures distinct identification across all student records."
                 },
-
                 new ExamQuestion
                 {
                     Id = 16,

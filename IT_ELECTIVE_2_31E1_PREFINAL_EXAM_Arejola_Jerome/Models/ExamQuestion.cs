@@ -1,4 +1,4 @@
-﻿namespace PrefinalExamApp.Models
+﻿namespace IT_ELECTIVE_2_31E1_PREFINAL_EXAM_Arejola_Jerome.Models
 {
     public class ExamQuestion
     {
