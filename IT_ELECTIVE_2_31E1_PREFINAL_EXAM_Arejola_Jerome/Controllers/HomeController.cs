@@ -34,6 +34,17 @@ namespace PrefinalExamApp.Controllers
                     Topic = "EF Core Approaches",
                     Explanation = "Database-First scaffolds entities directly from an existing database schema."
                 },
+                new ExamQuestion
+                {
+                    Id = 3,
+                QuestionText = "What is the primary purpose of Entity Framework Core?",
+                Options = new List<string>{ "A. To create HTML pages automatically", "B. To replace the MVC Controller", "C. To map objects in code to relational database data", "D. To replace the C# compiler" },
+                CorrectAnswer = "C",
+                Topic = "Entity Framework Core Basics",
+                Explanation = "EF Core is an ORM (Object-Relational Mapper) that maps C# objects to relational database tables."
+                },
+
+
             };
         }
     }
