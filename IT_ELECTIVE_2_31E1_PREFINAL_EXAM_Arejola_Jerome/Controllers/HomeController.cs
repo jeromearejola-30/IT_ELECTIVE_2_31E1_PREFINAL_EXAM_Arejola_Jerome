@@ -189,6 +189,15 @@ namespace PrefinalExamApp.Controllers
                     Topic = "HTTP Responses & Error Handling",
                     Explanation = "404 HTTP status indicates that the server cannot find the requested resource."
                 },
+                new ExamQuestion
+                {
+                    Id = 20,
+                    QuestionText = "A student already belongs to Section A for a particular subject. The application attempts to assign the same student to Section A again. What is the primary concern?",
+                    Options = new List<string>{ "A. Data integrity", "B. HTML formatting", "C. CSS inheritance", "D. Razor syntax" },
+                    CorrectAnswer = "A",
+                    Topic = "Structural Integrity & Rules",
+                    Explanation = "Preventing duplicate relationship entries maintains clean relational data integrity."
+                }
             };
         }
     }
