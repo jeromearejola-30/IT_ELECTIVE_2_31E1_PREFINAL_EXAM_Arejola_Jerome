@@ -143,6 +143,15 @@ namespace PrefinalExamApp.Controllers
                     Topic = "Server-side Validation Integrity",
                     Explanation = "Client-side scripts can easily be modified or disabled by users; server-side validation guarantees security."
                 },
+                new ExamQuestion
+                {
+                    Id = 15,
+                    QuestionText = "A school requires every student to have a unique Student Number. Which rule best represents this requirement?",
+                    Options = new List<string>{ "A. Student Number should always be nullable", "B. Student Number should be unique", "C. Student Number should always be the same", "D. Student Number should contain only spaces" },
+                    CorrectAnswer = "B",
+                    Topic = "Business & Domain Rules",
+                    Explanation = "Uniqueness ensures distinct identification across all student records."
+                },
 
             };
         }
