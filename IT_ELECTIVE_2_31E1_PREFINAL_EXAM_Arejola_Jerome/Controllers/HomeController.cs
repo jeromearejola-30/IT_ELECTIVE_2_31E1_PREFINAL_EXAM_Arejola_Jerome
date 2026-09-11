@@ -89,8 +89,15 @@ namespace PrefinalExamApp.Controllers
                     Topic = "Entity Properties & Keys",
                     Explanation = "SectionId holds the key value linking the student record to its primary record in the Section table."
                 },
-
-             
+                new ExamQuestion
+                {
+                    Id = 9,
+                    QuestionText = "What is the purpose of a navigation property such as public Section Section { get; set; }?",
+                    Options = new List<string>{ "A. It stores the database password", "B. It represents a relationship to another entity", "C. It creates a new database", "D. It validates the student's name" },
+                    CorrectAnswer = "B",
+                    Topic = "Navigation Properties",
+                    Explanation = "Navigation properties hold references to related entity objects rather than raw scalar values."
+                },
 
             };
         }
