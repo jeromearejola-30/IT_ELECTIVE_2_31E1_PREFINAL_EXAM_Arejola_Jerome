@@ -98,6 +98,15 @@ namespace PrefinalExamApp.Controllers
                     Topic = "Navigation Properties",
                     Explanation = "Navigation properties hold references to related entity objects rather than raw scalar values."
                 },
+                new ExamQuestion
+                {
+                    Id = 10,
+                    QuestionText = "What does .Include() generally allow EF Core to do?",
+                    Options = new List<string>{ "A. Delete the Section table", "B. Load related Section data together with Students", "C. Create a new Student", "D. Validate Student input" },
+                    CorrectAnswer = "B",
+                    Topic = "Eager Loading with Include",
+                    Explanation = ".Include() specifies related entities to be loaded along with the main query result (eager loading)."
+                },
 
             };
         }
