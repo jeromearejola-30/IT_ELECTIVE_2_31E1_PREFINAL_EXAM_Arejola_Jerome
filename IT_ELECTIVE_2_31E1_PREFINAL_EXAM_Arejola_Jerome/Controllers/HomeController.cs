@@ -171,6 +171,16 @@ namespace PrefinalExamApp.Controllers
                     Topic = "Exception Handling",
                     Explanation = "try...catch intercepts runtime exceptions and prevents the app from crashing unexpectedly."
                 },
+                new ExamQuestion
+                {
+                    Id = 18,
+                    QuestionText = "Which middleware is commonly used in ASP.NET Core for centralized exception handling?",
+                    Options = new List<string>{ "A. UseDatabase()", "B. UseExceptionHandler()", "C. UseValidationHandler()", "D. UseMvcDatabase()" },
+                    CorrectAnswer = "B",
+                    Topic = "ASP.NET Core Middleware",
+                    Explanation = "UseExceptionHandler() catches unhandled exceptions globally and routes to custom error pages."
+                },
+
             };
         }
     }
