@@ -61,6 +61,18 @@ namespace PrefinalExamApp.Controllers
                     Topic = "EF Core Scaffolding Command",
                     Explanation = "Scaffolding reads an existing database schema and generates model classes and a DbContext file."
                 },
+     
+                new ExamQuestion
+                {
+                    Id = 6,
+                    QuestionText = "Where is a database connection string commonly stored in an ASP.NET Core MVC application?",
+                    Options = new List<string>{ "A. Program.cs only", "B. appsettings.json", "C. Index.cshtml", "D. Student.cs" },
+                    CorrectAnswer = "B",
+                    Topic = "Configuration Settings",
+                    Explanation = "appsettings.json is the standard configuration file for connection strings and app secrets."
+                },
+
+
 
             };
         }
