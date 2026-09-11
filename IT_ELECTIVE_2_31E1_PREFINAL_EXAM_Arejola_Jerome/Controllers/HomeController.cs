@@ -180,7 +180,15 @@ namespace PrefinalExamApp.Controllers
                     Topic = "ASP.NET Core Middleware",
                     Explanation = "UseExceptionHandler() catches unhandled exceptions globally and routes to custom error pages."
                 },
-
+                new ExamQuestion
+                {
+                    Id = 19,
+                    QuestionText = "A user requests /Student/999, but Student 999 does not exist. What would be the most appropriate response?",
+                    Options = new List<string>{ "A. Display the student's information anyway", "B. Display a Not Found (404) response/page", "C. Delete Student 999", "D. Create Student 999 automatically" },
+                    CorrectAnswer = "B",
+                    Topic = "HTTP Responses & Error Handling",
+                    Explanation = "404 HTTP status indicates that the server cannot find the requested resource."
+                },
             };
         }
     }
