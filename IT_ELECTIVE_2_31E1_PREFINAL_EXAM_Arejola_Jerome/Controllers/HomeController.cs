@@ -43,6 +43,16 @@ namespace PrefinalExamApp.Controllers
                 Topic = "Entity Framework Core Basics",
                 Explanation = "EF Core is an ORM (Object-Relational Mapper) that maps C# objects to relational database tables."
                 },
+                // Item 4
+                new ExamQuestion
+                {
+                    Id = 4,
+                    QuestionText = "Which EF Core component is primarily responsible for communicating with the database?",
+                    Options = new List<string>{ "A. DbContext", "B. DbSetView", "C. ControllerContext", "D. RazorContext" },
+                    CorrectAnswer = "A",
+                    Topic = "EF Core Components",
+                    Explanation = "DbContext coordinates EF Core functionality and manages sessions with the database."
+                },
 
 
             };
