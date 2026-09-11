@@ -153,6 +153,15 @@ namespace PrefinalExamApp.Controllers
                     Explanation = "Uniqueness ensures distinct identification across all student records."
                 },
 
+                new ExamQuestion
+                {
+                    Id = 16,
+                    QuestionText = "Which is the best reason for having a database-level unique constraint on StudentNumber?",
+                    Options = new List<string>{ "A. It protects data integrity even if application-level validation is bypassed", "B. It makes Razor Views render faster", "C. It removes the need for a Controller", "D. It automatically creates a ViewModel" },
+                    CorrectAnswer = "A",
+                    Topic = "Database Constraints",
+                    Explanation = "Database constraints serve as the final line of defense for data consistency."
+                },
             };
         }
     }
