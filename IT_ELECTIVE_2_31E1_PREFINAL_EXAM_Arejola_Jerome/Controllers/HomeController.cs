@@ -80,7 +80,17 @@ namespace PrefinalExamApp.Controllers
                     Topic = "Relational Relationships",
                     Explanation = "One Section maps to multiple Student records (One-to-Many)."
                 },
+                new ExamQuestion
+                {
+                    Id = 8,
+                    QuestionText = "In the following example, what is SectionId? public int SectionId { get; set; } public Section Section { get; set; }",
+                    Options = new List<string>{ "A. Primary key of Student", "B. Foreign key referencing Section", "C. Navigation property", "D. Database connection string" },
+                    CorrectAnswer = "B",
+                    Topic = "Entity Properties & Keys",
+                    Explanation = "SectionId holds the key value linking the student record to its primary record in the Section table."
+                },
 
+             
 
             };
         }
