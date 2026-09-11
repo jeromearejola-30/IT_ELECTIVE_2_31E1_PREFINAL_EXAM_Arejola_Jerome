@@ -43,7 +43,6 @@ namespace PrefinalExamApp.Controllers
                 Topic = "Entity Framework Core Basics",
                 Explanation = "EF Core is an ORM (Object-Relational Mapper) that maps C# objects to relational database tables."
                 },
-                // Item 4
                 new ExamQuestion
                 {
                     Id = 4,
@@ -53,7 +52,15 @@ namespace PrefinalExamApp.Controllers
                     Topic = "EF Core Components",
                     Explanation = "DbContext coordinates EF Core functionality and manages sessions with the database."
                 },
-
+                new ExamQuestion
+                {
+                    Id = 5,
+                    QuestionText = "What does the following command primarily do? dotnet ef dbcontext scaffold \"ConnectionString\" Microsoft.EntityFrameworkCore.SqlServer -o Models",
+                    Options = new List<string>{ "A. Deletes the database", "B. Creates a new MVC project", "C. Generates EF Core models and a DbContext from an existing database", "D. Starts the MVC application" },
+                    CorrectAnswer = "C",
+                    Topic = "EF Core Scaffolding Command",
+                    Explanation = "Scaffolding reads an existing database schema and generates model classes and a DbContext file."
+                },
 
             };
         }
