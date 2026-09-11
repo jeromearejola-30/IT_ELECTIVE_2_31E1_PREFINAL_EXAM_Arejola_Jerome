@@ -134,6 +134,15 @@ namespace PrefinalExamApp.Controllers
                     Topic = "Validation Types",
                     Explanation = "Client-side validation executes JavaScript in the browser prior to HTTP transmission."
                 },
+                new ExamQuestion
+                {
+                    Id = 14,
+                    QuestionText = "Why is server-side validation still necessary if client-side validation exists?",
+                    Options = new List<string>{ "A. Client-side validation can be bypassed", "B. Client-side validation automatically modifies the database", "C. Server-side validation only works with SQLite", "D. Client-side validation cannot display messages" },
+                    CorrectAnswer = "A",
+                    Topic = "Server-side Validation Integrity",
+                    Explanation = "Client-side scripts can easily be modified or disabled by users; server-side validation guarantees security."
+                },
 
             };
         }
